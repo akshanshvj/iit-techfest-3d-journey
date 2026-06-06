@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700;900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #0a0a0f;
+  --color-brand-light: #ffffff;
+  --color-brand-primary: #00d2ff;
+  --color-brand-secondary: #3a7bd5;
+  --color-brand-accent: #ff007f;
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Orbitron', sans-serif;
+  --background-image-hero-glow: radial-gradient(circle at 50% 50%, rgba(0, 210, 255, 0.1) 0%, rgba(10, 10, 15, 0) 50%);
+}
+
+@layer base {
+  body {
+    @apply bg-brand-dark text-white font-sans antialiased overflow-x-hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-wider;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)];
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.7), 0 0 20px rgba(0, 210, 255, 0.5);
+  }
+  
+  .text-glow-accent {
+    text-shadow: 0 0 10px rgba(255, 0, 127, 0.7), 0 0 20px rgba(255, 0, 127, 0.5);
+  }
+}
+
+/* Hide scrollbar for cleaner look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 210, 255, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 210, 255, 0.6);
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
