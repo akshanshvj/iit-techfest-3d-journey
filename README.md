@@ -3,7 +3,7 @@
 A fully responsive, highly interactive 3D web experience representing a "Journey Through The Future".
 
 ## Demo Video
-<video src="./demo.mp4" controls="controls" muted="muted" style="max-width:100%;"></video>
+https://github.com/akshanshvj/iit-techfest-3d-journey/raw/main/demo.mp4
 
 ## Technologies Used
 - **React** & **TypeScript**
