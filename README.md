@@ -2,6 +2,9 @@
 
 A fully responsive, highly interactive 3D web experience representing a "Journey Through The Future".
 
+## Demo Video
+<video src="./demo.mp4" controls="controls" muted="muted" style="max-width:100%;"></video>
+
 ## Technologies Used
 - **React** & **TypeScript**
 - **Three.js** & **React Three Fiber** for 3D rendering
